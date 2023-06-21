@@ -5,8 +5,8 @@ public class Song {
     private int id;
     private String title;
 
-    // Costruttore
 
+    // costruttore vuoto per java beans
 
     public Song() {
     }

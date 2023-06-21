@@ -4,6 +4,7 @@ public class Movie {
     private int id;
     private String title;
 
+    // costruttore vuoto per java beans
     public Movie() {
     }
 

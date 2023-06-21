@@ -69,8 +69,8 @@ public class IndexController {
         List<Song> songs = new ArrayList<>();
         songs.add(new Song(1, "Bohemian rhapsody "));
         songs.add(new Song(2, "No limit of stars"));
-        songs.add(new Song(2, "Crawling"));
-        songs.add(new Song(2, "Weired fishes"));
+        songs.add(new Song(3, "Crawling"));
+        songs.add(new Song(4, "Weired fishes"));
         return songs;
     }
 

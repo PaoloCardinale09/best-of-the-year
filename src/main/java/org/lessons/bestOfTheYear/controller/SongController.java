@@ -18,7 +18,8 @@ public class SongController {
     @GetMapping("/{id}")
     public String songsDetail(@PathVariable Integer id, Model model) {
         // recupero il movie con id preso dal path
-        String name = "unknown";
+//        String name = "unknown";
+        Song currentSong = null;
         for (Song song : getSongsList()) {
             if (song.getId() == id) {
                 name = song.getTitle();

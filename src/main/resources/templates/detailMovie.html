@@ -6,12 +6,15 @@
 </head>
 <body>
 <nav th:replace="fragments :: navbar"></nav>
-    <h1>Details</h1>
+<div class="container text-center">
+
+    <h1 class="text-center text-primary">Details</h1>
     <div th:object="${movie}">
         <h2 th:text="|Titolo: *{title}|"></h2>
         <h3 th:text="|Id: *{id}|"></h3>
     </div>
 
+</div>
 
 </body>
 </html>

@@ -22,12 +22,13 @@ public class SongController {
         Song currentSong = null;
         for (Song song : getSongsList()) {
             if (song.getId() == id) {
-                name = song.getTitle();
+//                name = song.getTitle();
+                currentSong = song;
             }
         }
 
         // aggiungo il nome del movie al model
-        model.addAttribute("song", name);
+        model.addAttribute("song", currentSong);
         return "detailSong";
     }
 

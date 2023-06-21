@@ -6,7 +6,11 @@
 </head>
 <body>
 <nav th:replace="fragments :: navbar"></nav>
-<h1 th:text="${song}"></h1>
+<h1>Details</h1>
+<div th:object="${song}">
+    <h2 th:text="|Titolo: *{title}|"></h2>
+    <h3 th:text="|Id: *{id}|"></h3>
+</div>
 
 </body>
 </html>

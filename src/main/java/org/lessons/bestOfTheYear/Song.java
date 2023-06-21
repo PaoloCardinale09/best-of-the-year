@@ -8,6 +8,9 @@ public class Song {
     // Costruttore
 
 
+    public Song() {
+    }
+
     public Song(int id, String title) {
         this.id = id;
         this.title = title;
@@ -17,14 +20,15 @@ public class Song {
         return id;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getTitle() {
         return title;
     }
 
-
-    @Override
-    public String toString() {
-        return title;
+    public void setTitle(String title) {
+        this.title = title;
     }
 }
